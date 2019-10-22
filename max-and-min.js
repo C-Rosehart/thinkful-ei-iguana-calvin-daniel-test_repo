@@ -53,3 +53,18 @@ function goodbye() {
 
 repeat(hello, 5);
 repeat(goodbye, 5)
+
+
+
+// Functions as arguments (filter)
+function filter(arr, fn) {
+  let result = [];
+
+  for (let i = 0, len = arr.length; i < len; i++)
+    if (fn(arr[i]) == true) result.push(arr[i]);
+
+  return result;
+}
+
+const myNames = ["Rich", "Joe", "Bhaumik", "Ray"];
+const filteredNames = console.log(filter(myNames, name => name[0] === "R"));
