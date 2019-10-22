@@ -60,9 +60,9 @@ repeat(goodbye, 5)
 function filter(arr, fn) {
   let result = [];
 
-  for (let i = 0, len = arr.length; i < len; i++)
+  for (let i = 0, len = arr.length; i < len; i++) {
     if (fn(arr[i]) == true) result.push(arr[i]);
-
+  }
   return result;
 }
 
