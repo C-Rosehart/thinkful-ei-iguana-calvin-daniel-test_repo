@@ -24,6 +24,18 @@ function min(numbers) {
 console.log(minNum[1,2,3,4,5])
 
 
+
+function average(nums) {
+   let sum = 0; nums.forEach(element => {
+      sum += element; 
+    });
+
+return sum / nums.length; 
+} 
+console.log(average([1,1,1,1,1,1]));
+
+
+
 /* From here down, you are not expected to 
    understand.... for now :)  
    
