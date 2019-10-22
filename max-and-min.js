@@ -90,6 +90,7 @@ rocks('Everywhere');
 flying('Your room');
 
 
+// TURTLE
 
 const turtleMovements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 
@@ -102,3 +103,16 @@ let newMoves = turtleMovements
 newMoves.forEach((el, i) => {
   console.log(`Movement #${i}: ${el} ${el > 1 || el == 0 ? "steps" : "step"}`);
 });
+
+// REDUCE REUSE RECYCLE
+
+let arr = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+const message = arr.split(' ').reduce((acc, val) => {
+  if (val.length === 3) {
+    return acc + ' ';
+  } else { 
+    return acc + val[val.length-1].toUpperCase();
+  }
+}, "");
+
+console.log(message);
