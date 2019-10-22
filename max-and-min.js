@@ -1,36 +1,36 @@
 'use strict';
 function max(numbers) {
-    let num = 1;
-    let maxNum = numbers[0];
-    while(num<numbers.length) {
-        if(numbers[num]>maxNum){
-        maxNum = numbers[num];
-        }
+  let num = 1;
+  let maxNum = numbers[0];
+  while(num<numbers.length) {
+    if(numbers[num]>maxNum){
+      maxNum = numbers[num];
     }
-    return maxNum;
+  }
+  return maxNum;
 }
 console.log(maxNum[1,2,3,4,5])
 
 function min(numbers) {
-    let num = 1;
-    let minNum = numbers[0];
-    while(num>numbers.length) {
-        if(numbers[num]<minNum){
-        minNum = numbers[num];
-        }
+  let num = 1;
+  let minNum = numbers[0];
+  while(num>numbers.length) {
+    if(numbers[num]<minNum){
+      minNum = numbers[num];
     }
-    return minNum;
+  }
+  return minNum;
 }
 console.log(minNum[1,2,3,4,5])
 
 
 
 function average(nums) {
-   let sum = 0; nums.forEach(element => {
-      sum += element; 
-    });
+  let sum = 0; nums.forEach(element => {
+    sum += element; 
+  });
 
-return sum / nums.length; 
+  return sum / nums.length; 
 } 
 console.log(average([1,1,1,1,1,1]));
 
