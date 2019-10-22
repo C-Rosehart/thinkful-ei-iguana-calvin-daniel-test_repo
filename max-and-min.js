@@ -9,7 +9,7 @@ function max(numbers) {
   }
   return maxNum;
 }
-console.log(max[1,2,3,4,5])
+console.log(max[1,2,3,4,5]);
 
 function min(numbers) {
   let num = 1;
@@ -21,7 +21,7 @@ function min(numbers) {
   }
   return minNum;
 }
-console.log(min[1,2,3,4,5])
+console.log(min[1,2,3,4,5]);
 
 
 
@@ -52,7 +52,7 @@ function goodbye() {
 }
 
 repeat(hello, 5);
-repeat(goodbye, 5)
+repeat(goodbye, 5);
 
 
 
@@ -61,13 +61,14 @@ function filter(arr, fn) {
   let result = [];
 
   for (let i = 0, len = arr.length; i < len; i++) {
-    if (fn(arr[i]) == true) result.push(arr[i]);
+    if (fn(arr[i]) === true) result.push(arr[i]);
   }
   return result;
 }
 
-const myNames = ["Rich", "Joe", "Bhaumik", "Ray"];
-const filteredNames = console.log(filter(myNames, name => name[0] === "R"));
+const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
+const filteredNames = filter(myNames, name => name[0] === 'R');
+console.log(filteredNames);
 
 
 // Hazard Alert
@@ -79,7 +80,7 @@ function hazardWarningCreator(typeOfWarning) {
     console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
     console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} times today!`);
 
-  }
+  };
 }
 
 const rocks = hazardWarningCreator('rocks on the road');
