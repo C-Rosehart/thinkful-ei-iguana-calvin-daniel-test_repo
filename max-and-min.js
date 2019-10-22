@@ -68,3 +68,23 @@ function filter(arr, fn) {
 
 const myNames = ["Rich", "Joe", "Bhaumik", "Ray"];
 const filteredNames = console.log(filter(myNames, name => name[0] === "R"));
+
+
+// Hazard Alert
+
+function hazardWarningCreator(typeOfWarning) {
+  let warningCounter = 0;
+  return location => {
+    warningCounter++;
+    console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
+    console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} times today!`);
+
+  }
+}
+
+const rocks = hazardWarningCreator('rocks on the road');
+const flying = hazardWarningCreator('flying monsters');
+rocks('Denmark');
+rocks('Everywhere');
+flying('Your room');
+
