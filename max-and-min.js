@@ -89,3 +89,16 @@ rocks('Denmark');
 rocks('Everywhere');
 flying('Your room');
 
+
+
+const turtleMovements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+turtleMovements.filter(item => (item[0] < 0 || item[1] < 0 ? false : true));
+
+let newMoves = turtleMovements
+  .filter(item => (item[0] < 0 || item[1] < 0 ? false : true))
+  .map(item => item[0] + item[1]);
+
+newMoves.forEach((el, i) => {
+  console.log(`Movement #${i}: ${el} ${el > 1 || el == 0 ? "steps" : "step"}`);
+});
